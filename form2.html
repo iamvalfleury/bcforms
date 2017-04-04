@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>this is a form</title>
+    <link rel="shortcut icon" href="http://images.clipartpanda.com/smiley-face-clip-art-images-sun_smiley_face.png" type="image/png" />
+    <link href="https://fonts.googleapis.com/css?family=Spirax" rel="stylesheet">
+    <style>
+    div {
+        font-family: 'Spirax', cursive;
+        padding: 20px; 
+        margin: 0; 
+    }     
+   
+    input{
+        padding: 5px; 
+    }
+    </style>
+</head>
+
+<body>
+    <!--<ol>
+        <li>Make a Git repository beachcoders</li>
+        <li>Clone the repo on your local machine</li>
+        <li>Make a professional looking form.</li>
+        <li>Add a favicon</li>
+        <li>Add a Google font.</li>
+        <li>Adjust the JavaScript to send an alert with the persons first and last name</li>
+        <li>Push the form to Github</li>
+    </ol>-->
+
+<div class="forminfo">
+    <form action="">
+        <p>First Name: <input type="text" id="first" placeholder="must fill in"><br></p>
+        <p>Last Name: <input type="text" id="last" placeholder="must fill in"><br></p>
+        <p>Birth Month: <input type="text" id="bmonth"><br></p>
+        <p>Green Eyes? <input type="radio" id="eyes"><br></p>
+        <input type="submit" value="Submit" onclick="myFunction()">
+    </form>
+</div>
+
+    <script>
+        function myFunction(){
+            var first = document.getElementById("first").value;
+            var last = document.getElementById("last").value;
+
+            alert(`thank you ${first} ${last}, for your submission!`)
+        }
+    </script>
+</body>
+
+</html>
